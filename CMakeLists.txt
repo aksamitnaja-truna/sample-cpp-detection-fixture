@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(SampleApp LANGUAGES CXX)
+find_package(Qt6 REQUIRED COMPONENTS Widgets WebEngineWidgets WebChannel Network Xml)
+add_executable(SampleApp main.cpp)
+target_link_libraries(SampleApp PRIVATE Qt6::Widgets Qt6::WebEngineWidgets Qt6::WebChannel Qt6::Network Qt6::Xml)
